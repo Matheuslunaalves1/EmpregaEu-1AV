@@ -6,5 +6,8 @@
     <string name="login">Login</string>
     <string name="textoExemplo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. </string>
     <string name="msgError">User error</string>
-    <string name="cadastro">cadastre-se</string>
+    <string name="cadastro">Register</string>
+    <string name="welcome">Welcome!</string>
+    <string name="txtEmail">Email</string>
+
 </resources>

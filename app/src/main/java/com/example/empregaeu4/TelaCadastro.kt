@@ -1,23 +1,24 @@
 package com.example.empregaeu4
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import com.example.empregaeu4.databinding.ActivityMainBinding
+import com.example.empregaeu4.databinding.TelaCadastroBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityMainBinding
+class TelaCadastro : AppCompatActivity() {
+
+    private lateinit var binding: TelaCadastroBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = TelaCadastroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         binding.btLogin.setOnClickListener {
-            val navegarTelaInicial = Intent(this, Tela2Activity::class.java)
+            val navegarTelaInicial = Intent(this,Tela2Activity::class.java)
             startActivity(navegarTelaInicial)
-
         }
     }
 }
+

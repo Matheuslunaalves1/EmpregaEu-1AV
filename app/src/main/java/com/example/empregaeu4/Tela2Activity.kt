@@ -13,9 +13,6 @@ class Tela2Activity : AppCompatActivity() {
         binding = ActivityTela2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val usuarioNome = binding.tvUsuarioNome
-        val nome = intent.getStringExtra("nome")
-        usuarioNome.text = nome
-        //setContentView(R.layout.activity_tela2)
+
     }
 }

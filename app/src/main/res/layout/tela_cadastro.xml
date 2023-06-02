@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
+
 
     <TextView
         android:id="@+id/tvTitulo"
@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="@string/app_name"
-        android:textSize="30sp"
         android:textColor="@color/white"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,6 +32,22 @@
         app:layout_constraintStart_toStartOf="@+id/tvTitulo"
         app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
 
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="258dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="@string/txtEmail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edUsuario"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edUsuario"
+        app:layout_constraintTop_toTopOf="@+id/edUsuario" />
+
+
     <EditText
         android:id="@+id/edSenha"
         android:layout_width="258dp"
@@ -41,43 +57,22 @@
         android:hint="@string/password"
         android:inputType="numberPassword"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/edUsuario"
+        app:layout_constraintEnd_toEndOf="@+id/edEmail"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edUsuario"
-        app:layout_constraintTop_toTopOf="@+id/edUsuario" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/remember"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/edSenha"
-        app:layout_constraintTop_toBottomOf="@+id/edSenha" />
+        app:layout_constraintStart_toStartOf="@+id/edEmail"
+        app:layout_constraintTop_toTopOf="@+id/edEmail" />
 
     <Button
         android:id="@+id/btLogin"
         android:layout_width="217dp"
         android:layout_height="55dp"
-        android:layout_marginTop="40dp"
         android:text="@string/login"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/edSenha"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edSenha"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="217dp"
-        android:layout_height="55dp"
-        android:text="@string/cadastro"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btLogin"
-        app:layout_constraintStart_toStartOf="@+id/btLogin"
-        app:layout_constraintTop_toBottomOf="@+id/btLogin"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintEnd_toEndOf="@+id/edSenha"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="@+id/edSenha"
+        app:layout_constraintTop_toBottomOf="@+id/edSenha" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
