@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "772228331791",
+    "project_id": "recifefit-a435c",
+    "storage_bucket": "recifefit-a435c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772228331791:android:eb1b27ef352dc429ed267a",
+        "android_client_info": {
+          "package_name": "com.example.recifefitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772228331791-iedip7lea2ml9t2ct9tvprsp7hgkvpmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD2GcJcKGhlqqFB1r7Gw89Fp-yxiZwE6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772228331791-iedip7lea2ml9t2ct9tvprsp7hgkvpmg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

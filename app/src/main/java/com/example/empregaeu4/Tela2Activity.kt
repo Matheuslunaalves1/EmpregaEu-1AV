@@ -2,7 +2,7 @@ package com.example.empregaeu4
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.empregaeu4.databinding.ActivityTela2Binding
+import com.example.recifefitness.databinding.ActivityTela2Binding
 
 class Tela2Activity : AppCompatActivity() {
 
